@@ -1,0 +1,23 @@
+<div class="col mb-5">
+  <div class="card h-100">
+    
+    <img class="card-img-top" style="max-height: 5%; margin-top: -50px; height: 100px;"
+      src="https://seekvectorlogo.com/wp-content/uploads/2018/09/hotels-com-vector-logo-small.png" alt="..." />
+    
+    <div class="card-body p-4">
+      <div class="text-center">
+       
+        <h5 class="fw-bolder">{{room.roomNumber}}</h5>
+        
+        Hotel - {{room.name}}
+        <br>Broj osoba: {{room.availablePpl}}
+        <br />Cena nocenja: {{room.price}}$
+      </div>
+    </div>
+    
+    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+      <div class="btns d-flex justify-content-between">
+        <a (click)="editHotelRoom()" style="background: #9c9fa4; border: none; " class="btn btn-primary">Izmenite</a>
+        <a (click)="deleteHotel()" style="background: #9c9fa4; border: none;" class="btn btn-danger">Obrisite</a>
+      </div>
+    </div>

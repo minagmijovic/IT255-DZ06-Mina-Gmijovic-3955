@@ -1,0 +1,42 @@
+<form [formGroup]="roomForm" (ngSubmit)="submitForm()">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="roomNumber" style="margin-bottom: 5px; ">Naziv i broj sobe
+                    *</label>
+                <input formControlName="roomNumber" name="roomNumber" id="roomNumber" #newroomNumber
+                    class="form-control" placeholder="Unesite naziv i broj sobe*" required="required">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="h_name" style="margin-bottom: 5px;">Naziv hotela *</label>
+                <input formControlName="h_name" name="h_name" id="h_name" #newh_name class="form-control"
+                    placeholder="Unesite naziv hotela*" required="required">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="availablePpl" style="margin-bottom: 5px;">Broj osoba
+                    *</label>
+                <input formControlName="availablePpl" name="availablePpl" id="availablePpl" #newavailablePpl
+                    class="form-control" placeholder="Unesite broj osoba*" required="required">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="price" style="margin-bottom: 5px;">Cena nocenja*</label>
+                <input formControlName="price" name="price" id="price" #newprice class="form-control"
+                    placeholder="Unesite cemu nocenja*" required="required">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="margin-top: 10px;">
+            <button style="min-width: 100%;" class="btn btn-success btn-send pt-2 btn-block" type="submit"
+                name="submit">Dodaj novu sobu</button>
+        </div>
+    </div>
+</form>
